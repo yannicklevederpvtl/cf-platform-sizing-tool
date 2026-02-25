@@ -1,0 +1,1 @@
+import{e as a,h as t}from"./9UDY8i-D.js";function i(){const o=a(),e=t(()=>o.selectedFoundationId),n=t(()=>o.selectedFoundation),d=t(()=>o.foundations);function s(u){o.setSelectedFoundationId(u)}return{selectedFoundationId:e,selectedFoundation:n,foundations:d,setSelectedFoundationId:s}}export{i as u};
