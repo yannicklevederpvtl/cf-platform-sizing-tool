@@ -2,12 +2,16 @@
 
 Chrome extension for Cloud Foundry platform sizing.
 
-## Load the extension
+## Getting started
 
-1. Open Chrome and go to `chrome://extensions/`.
-2. Turn on **Developer mode** (top right).
-3. Click **Load unpacked**.
-4. Select this folder (the repo root). The extension will load from the built files here.
+1. Clone this repository:
+   ```bash
+   git clone <repo-url>
+   ```
+2. Open Chrome and go to `chrome://extensions/`.
+3. Turn on **Developer mode** (top right).
+4. Click **Load unpacked**.
+5. Select the `cf-platform-sizing-tool` folder from the cloned repo. The extension will load from the built files here.
 
 ## Privacy and network
 
