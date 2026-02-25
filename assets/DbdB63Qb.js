@@ -1,0 +1,1 @@
+import{j as s,c as t,a as n,t as o,p as a,W as c,o as i}from"./U1ym-5yy.js";const p={class:"text-sm text-muted"},f=s({__name:"index",setup(r){const e=c().public.appVersion;return(u,_)=>(i(),t("div",null,[n("p",p,"Version "+o(a(e))+" alpha",1)]))}});export{f as default};
