@@ -1,0 +1,46 @@
+{
+  "name": "Tanzu for MySQL on Tanzu Platform",
+  "version": "10.1.x",
+  "supportedIaaS": ["vsphere", "aws", "azure", "gcp"],
+  "supportedRuntimeKeys": ["ert_6.0", "ert_10.2", "ert_10.3", "ert_10.3_small_footprint"],
+  "sizes": [],
+  "jobs": [
+    {
+      "vm": "deployed_application",
+      "dynamicIPs": 0,
+      "staticIPs": 1,
+      "defaults": {
+        "all": {
+          "instances": 1,
+          "persistentDisk": 1024
+        }
+      },
+      "iaas": {
+        "vsphere": {
+          "all": {
+            "instanceType": "medium",
+            "persistentDisk": 1024
+          }
+        },
+        "aws": {
+          "all": {
+            "instanceType": "m5.large",
+            "persistentDisk": 1024
+          }
+        },
+        "azure": {
+          "all": {
+            "instanceType": "Standard_DS2_v2",
+            "persistentDisk": 1024
+          }
+        },
+        "gcp": {
+          "all": {
+            "instanceType": "e2-medium",
+            "persistentDisk": 1024
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Tanzu GemFire on Tanzu Platform",
+  "version": "2.2.x",
+  "supportedIaaS": ["vsphere", "aws", "azure", "gcp", "openstack"],
+  "supportedRuntimeKeys": ["ert_6.0", "ert_10.2", "ert_10.3", "ert_10.3_small_footprint"],
+  "sizes": [
+    { "size": "all", "displayName": "All" }
+  ],
+  "jobs": [
+    {
+      "vm": "GemFire Locator",
+      "dynamicIPs": 1,
+      "staticIPs": 0,
+      "singleton": true,
+      "defaults": { "all": { "instances": 1, "persistentDisk": 10 } },
+      "iaas": {
+        "vsphere": { "all": { "instanceType": "medium" } },
+        "aws": { "all": { "instanceType": "t3.small" } },
+        "azure": { "all": { "instanceType": "Standard_B1ms" } },
+        "gcp": { "all": { "instanceType": "e2-small" } },
+        "openstack": { "all": { "instanceType": "m1.small" } }
+      }
+    },
+    {
+      "vm": "GemFire Server",
+      "dynamicIPs": 1,
+      "staticIPs": 0,
+      "singleton": true,
+      "defaults": { "all": { "instances": 1, "persistentDisk": 10 } },
+      "iaas": {
+        "vsphere": { "all": { "instanceType": "large.cpu" } },
+        "aws": { "all": { "instanceType": "c5.xlarge" } },
+        "azure": { "all": { "instanceType": "Standard_F4s" } },
+        "gcp": { "all": { "instanceType": "e2-highcpu-4" } },
+        "openstack": { "all": { "instanceType": "m1.small" } }
+      }
+    }
+  ]
+}

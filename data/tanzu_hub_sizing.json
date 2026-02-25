@@ -1,0 +1,60 @@
+{
+  "sizes": [
+    {
+      "tier": "evaluation",
+      "displayName": "Evaluation",
+      "pools": [
+        { "pool": "System", "nodes": 1, "nodesHa": 1, "cores": 2, "ramGb": 4, "persistentDiskGb": 0, "iaas": { "vsphere": { "instanceType": "medium.disk" }, "aws": { "instanceType": "t3.medium" }, "azure": { "instanceType": "Standard_F1s" }, "gcp": { "instanceType": "medium.disk" }, "openstack": { "instanceType": "m1.medium" } } },
+        { "pool": "Database", "nodes": 1, "nodesHa": 3, "cores": 2, "ramGb": 4, "persistentDiskGb": 150, "iaas": { "vsphere": { "instanceType": "medium.disk" }, "aws": { "instanceType": "t3.medium" }, "azure": { "instanceType": "Standard_F1s" }, "gcp": { "instanceType": "medium.disk" }, "openstack": { "instanceType": "m1.medium" } } },
+        { "pool": "Messaging", "nodes": 3, "nodesHa": 3, "cores": 2, "ramGb": 4, "persistentDiskGb": 100, "iaas": { "vsphere": { "instanceType": "medium.disk" }, "aws": { "instanceType": "t3.medium" }, "azure": { "instanceType": "Standard_F1s" }, "gcp": { "instanceType": "medium.disk" }, "openstack": { "instanceType": "m1.medium" } } },
+        { "pool": "Metric Store", "nodes": 1, "nodesHa": 3, "cores": 2, "ramGb": 4, "persistentDiskGb": 100, "iaas": { "vsphere": { "instanceType": "medium.disk" }, "aws": { "instanceType": "t3.medium" }, "azure": { "instanceType": "Standard_F1s" }, "gcp": { "instanceType": "medium.disk" }, "openstack": { "instanceType": "m1.medium" } } },
+        { "pool": "Monitoring", "nodes": 1, "nodesHa": 1, "cores": 2, "ramGb": 4, "persistentDiskGb": 50, "iaas": { "vsphere": { "instanceType": "medium.disk" }, "aws": { "instanceType": "t3.medium" }, "azure": { "instanceType": "Standard_F1s" }, "gcp": { "instanceType": "medium.disk" }, "openstack": { "instanceType": "m1.medium" } } },
+        { "pool": "Control", "nodes": 3, "nodesHa": 5, "cores": 4, "ramGb": 16, "persistentDiskGb": 0, "iaas": { "vsphere": { "instanceType": "xlarge.disk" }, "aws": { "instanceType": "r5.xlarge" }, "azure": { "instanceType": "Standard_DS12_v2" }, "gcp": { "instanceType": "xlarge.disk" }, "openstack": { "instanceType": "m1.large-diego-cell" } } },
+        { "pool": "Blobstore", "nodes": 1, "nodesHa": 1, "cores": 2, "ramGb": 4, "persistentDiskGb": 100, "iaas": { "vsphere": { "instanceType": "medium.disk" }, "aws": { "instanceType": "t3.medium" }, "azure": { "instanceType": "Standard_F1s" }, "gcp": { "instanceType": "medium.disk" }, "openstack": { "instanceType": "m1.medium" } } },
+        { "pool": "Registry", "nodes": 1, "nodesHa": 1, "cores": 4, "ramGb": 16, "persistentDiskGb": 0, "iaas": { "vsphere": { "instanceType": "xlarge.disk" }, "aws": { "instanceType": "r5.xlarge" }, "azure": { "instanceType": "Standard_DS12_v2" }, "gcp": { "instanceType": "xlarge.disk" }, "openstack": { "instanceType": "m1.large-diego-cell" } } }
+      ]
+    },
+    {
+      "tier": "small",
+      "displayName": "Small",
+      "pools": [
+        { "pool": "System", "nodes": 1, "nodesHa": 1, "cores": 2, "ramGb": 4, "persistentDiskGb": 0, "iaas": { "vsphere": { "instanceType": "medium.disk" }, "aws": { "instanceType": "t3.medium" }, "azure": { "instanceType": "Standard_F1s" }, "gcp": { "instanceType": "medium.disk" }, "openstack": { "instanceType": "m1.medium" } } },
+        { "pool": "Database", "nodes": 1, "nodesHa": 3, "cores": 4, "ramGb": 16, "persistentDiskGb": 150, "iaas": { "vsphere": { "instanceType": "xlarge.disk" }, "aws": { "instanceType": "r5.xlarge" }, "azure": { "instanceType": "Standard_DS12_v2" }, "gcp": { "instanceType": "xlarge.disk" }, "openstack": { "instanceType": "m1.large-diego-cell" } } },
+        { "pool": "Messaging", "nodes": 3, "nodesHa": 3, "cores": 2, "ramGb": 8, "persistentDiskGb": 100, "iaas": { "vsphere": { "instanceType": "large.disk" }, "aws": { "instanceType": "r5.large" }, "azure": { "instanceType": "Standard_DS11_v2" }, "gcp": { "instanceType": "large.disk" }, "openstack": { "instanceType": "m1.large" } } },
+        { "pool": "Metric Store", "nodes": 1, "nodesHa": 3, "cores": 4, "ramGb": 16, "persistentDiskGb": 300, "iaas": { "vsphere": { "instanceType": "xlarge.disk" }, "aws": { "instanceType": "r5.xlarge" }, "azure": { "instanceType": "Standard_DS12_v2" }, "gcp": { "instanceType": "xlarge.disk" }, "openstack": { "instanceType": "m1.large-diego-cell" } } },
+        { "pool": "Monitoring", "nodes": 1, "nodesHa": 1, "cores": 2, "ramGb": 4, "persistentDiskGb": 50, "iaas": { "vsphere": { "instanceType": "medium.disk" }, "aws": { "instanceType": "t3.medium" }, "azure": { "instanceType": "Standard_F1s" }, "gcp": { "instanceType": "medium.disk" }, "openstack": { "instanceType": "m1.medium" } } },
+        { "pool": "Control", "nodes": 3, "nodesHa": 5, "cores": 8, "ramGb": 32, "persistentDiskGb": 0, "iaas": { "vsphere": { "instanceType": "2xlarge.disk" }, "aws": { "instanceType": "r5.2xlarge" }, "azure": { "instanceType": "Standard_DS12_v2" }, "gcp": { "instanceType": "2xlarge.disk" }, "openstack": { "instanceType": "m1.xlarge-diego-cell" } } },
+        { "pool": "Blobstore", "nodes": 1, "nodesHa": 1, "cores": 2, "ramGb": 4, "persistentDiskGb": 200, "iaas": { "vsphere": { "instanceType": "medium.disk" }, "aws": { "instanceType": "t3.medium" }, "azure": { "instanceType": "Standard_F1s" }, "gcp": { "instanceType": "medium.disk" }, "openstack": { "instanceType": "m1.medium" } } },
+        { "pool": "Registry", "nodes": 1, "nodesHa": 1, "cores": 4, "ramGb": 16, "persistentDiskGb": 0, "iaas": { "vsphere": { "instanceType": "xlarge.disk" }, "aws": { "instanceType": "r5.xlarge" }, "azure": { "instanceType": "Standard_DS12_v2" }, "gcp": { "instanceType": "xlarge.disk" }, "openstack": { "instanceType": "m1.large-diego-cell" } } }
+      ]
+    },
+    {
+      "tier": "medium",
+      "displayName": "Medium",
+      "pools": [
+        { "pool": "System", "nodes": 1, "nodesHa": 1, "cores": 2, "ramGb": 4, "persistentDiskGb": 0, "iaas": { "vsphere": { "instanceType": "medium.disk" }, "aws": { "instanceType": "t3.medium" }, "azure": { "instanceType": "Standard_F1s" }, "gcp": { "instanceType": "medium.disk" }, "openstack": { "instanceType": "m1.medium" } } },
+        { "pool": "Database", "nodes": 1, "nodesHa": 3, "cores": 8, "ramGb": 8, "persistentDiskGb": 300, "iaas": { "vsphere": { "instanceType": "xlarge.cpu" }, "aws": { "instanceType": "c5.2xlarge" }, "azure": { "instanceType": "Standard_F8s" }, "gcp": { "instanceType": "xlarge.cpu" }, "openstack": { "instanceType": "m1.xlarge" } } },
+        { "pool": "Messaging", "nodes": 3, "nodesHa": 3, "cores": 8, "ramGb": 8, "persistentDiskGb": 150, "iaas": { "vsphere": { "instanceType": "xlarge.cpu" }, "aws": { "instanceType": "c5.2xlarge" }, "azure": { "instanceType": "Standard_F8s" }, "gcp": { "instanceType": "xlarge.cpu" }, "openstack": { "instanceType": "m1.xlarge" } } },
+        { "pool": "Metric Store", "nodes": 3, "nodesHa": 3, "cores": 4, "ramGb": 16, "persistentDiskGb": 300, "iaas": { "vsphere": { "instanceType": "xlarge.disk" }, "aws": { "instanceType": "r5.xlarge" }, "azure": { "instanceType": "Standard_DS12_v2" }, "gcp": { "instanceType": "xlarge.disk" }, "openstack": { "instanceType": "m1.large-diego-cell" } } },
+        { "pool": "Monitoring", "nodes": 1, "nodesHa": 1, "cores": 2, "ramGb": 4, "persistentDiskGb": 50, "iaas": { "vsphere": { "instanceType": "medium.disk" }, "aws": { "instanceType": "t3.medium" }, "azure": { "instanceType": "Standard_F1s" }, "gcp": { "instanceType": "medium.disk" }, "openstack": { "instanceType": "m1.medium" } } },
+        { "pool": "Control", "nodes": 5, "nodesHa": 6, "cores": 8, "ramGb": 32, "persistentDiskGb": 0, "iaas": { "vsphere": { "instanceType": "2xlarge.disk" }, "aws": { "instanceType": "r5.2xlarge" }, "azure": { "instanceType": "Standard_DS12_v2" }, "gcp": { "instanceType": "2xlarge.disk" }, "openstack": { "instanceType": "m1.xlarge-diego-cell" } } },
+        { "pool": "Blobstore", "nodes": 1, "nodesHa": 1, "cores": 2, "ramGb": 4, "persistentDiskGb": 300, "iaas": { "vsphere": { "instanceType": "medium.disk" }, "aws": { "instanceType": "t3.medium" }, "azure": { "instanceType": "Standard_F1s" }, "gcp": { "instanceType": "medium.disk" }, "openstack": { "instanceType": "m1.medium" } } },
+        { "pool": "Registry", "nodes": 1, "nodesHa": 1, "cores": 4, "ramGb": 16, "persistentDiskGb": 0, "iaas": { "vsphere": { "instanceType": "xlarge.disk" }, "aws": { "instanceType": "r5.xlarge" }, "azure": { "instanceType": "Standard_DS12_v2" }, "gcp": { "instanceType": "xlarge.disk" }, "openstack": { "instanceType": "m1.large-diego-cell" } } }
+      ]
+    },
+    {
+      "tier": "enterprise",
+      "displayName": "Enterprise",
+      "pools": [
+        { "pool": "System", "nodes": 1, "nodesHa": 1, "cores": 2, "ramGb": 4, "persistentDiskGb": 0, "iaas": { "vsphere": { "instanceType": "medium.disk" }, "aws": { "instanceType": "t3.medium" }, "azure": { "instanceType": "Standard_F1s" }, "gcp": { "instanceType": "medium.disk" }, "openstack": { "instanceType": "m1.medium" } } },
+        { "pool": "Database", "nodes": 3, "nodesHa": 3, "cores": 16, "ramGb": 16, "persistentDiskGb": 500, "iaas": { "vsphere": { "instanceType": "2xlarge.cpu" }, "aws": { "instanceType": "c5.4xlarge" }, "azure": { "instanceType": "Standard_F16s_v2" }, "gcp": { "instanceType": "2xlarge.cpu" }, "openstack": { "instanceType": "2xlarge.cpu" } } },
+        { "pool": "Messaging", "nodes": 3, "nodesHa": 3, "cores": 8, "ramGb": 8, "persistentDiskGb": 200, "iaas": { "vsphere": { "instanceType": "xlarge.cpu" }, "aws": { "instanceType": "c5.2xlarge" }, "azure": { "instanceType": "Standard_F8s" }, "gcp": { "instanceType": "xlarge.cpu" }, "openstack": { "instanceType": "m1.xlarge" } } },
+        { "pool": "Metric Store", "nodes": 3, "nodesHa": 3, "cores": 4, "ramGb": 16, "persistentDiskGb": 500, "iaas": { "vsphere": { "instanceType": "xlarge.disk" }, "aws": { "instanceType": "r5.xlarge" }, "azure": { "instanceType": "Standard_DS12_v2" }, "gcp": { "instanceType": "xlarge.disk" }, "openstack": { "instanceType": "m1.large-diego-cell" } } },
+        { "pool": "Monitoring", "nodes": 1, "nodesHa": 1, "cores": 2, "ramGb": 4, "persistentDiskGb": 50, "iaas": { "vsphere": { "instanceType": "medium.disk" }, "aws": { "instanceType": "t3.medium" }, "azure": { "instanceType": "Standard_F1s" }, "gcp": { "instanceType": "medium.disk" }, "openstack": { "instanceType": "m1.medium" } } },
+        { "pool": "Control", "nodes": 9, "nodesHa": 9, "cores": 8, "ramGb": 32, "persistentDiskGb": 0, "iaas": { "vsphere": { "instanceType": "2xlarge.disk" }, "aws": { "instanceType": "r5.2xlarge" }, "azure": { "instanceType": "Standard_DS12_v2" }, "gcp": { "instanceType": "2xlarge.disk" }, "openstack": { "instanceType": "m1.xlarge-diego-cell" } } },
+        { "pool": "Blobstore", "nodes": 1, "nodesHa": 1, "cores": 2, "ramGb": 4, "persistentDiskGb": 500, "iaas": { "vsphere": { "instanceType": "medium.disk" }, "aws": { "instanceType": "t3.medium" }, "azure": { "instanceType": "Standard_F1s" }, "gcp": { "instanceType": "medium.disk" }, "openstack": { "instanceType": "m1.medium" } } },
+        { "pool": "Registry", "nodes": 1, "nodesHa": 1, "cores": 4, "ramGb": 16, "persistentDiskGb": 0, "iaas": { "vsphere": { "instanceType": "xlarge.disk" }, "aws": { "instanceType": "r5.xlarge" }, "azure": { "instanceType": "Standard_DS12_v2" }, "gcp": { "instanceType": "xlarge.disk" }, "openstack": { "instanceType": "m1.large-diego-cell" } } }
+      ]
+    }
+  ]
+}

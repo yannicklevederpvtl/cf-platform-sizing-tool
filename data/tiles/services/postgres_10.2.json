@@ -1,0 +1,69 @@
+{
+  "name": "Tanzu for Postgres on Tanzu Platform",
+  "version": "10.2.x",
+  "supportedIaaS": ["vsphere", "aws", "azure", "gcp", "openstack"],
+  "supportedRuntimeKeys": ["ert_6.0", "ert_10.2", "ert_10.3", "ert_10.3_small_footprint"],
+  "sizes": [
+    {
+      "size": "all",
+      "displayName": "All"
+    }
+  ],
+  "jobs":
+  [
+    {
+      "vm": "Postgres On-Demand Broker",
+      "dynamicIPs": 1,
+      "staticIPs": 1,
+      "singleton": false,
+      "defaults": {
+        "all": {
+          "instances": 1,
+          "persistentDisk": 10
+        }
+      },
+      "iaas": {
+        "vsphere": {
+          "all": {
+            "instanceType": "medium",
+            "validInstanceTypes": [
+              "medium"
+            ]
+          }
+        },
+        "aws": {
+          "all": {
+            "instanceType": "m5.large",
+            "validInstanceTypes": [
+              "m5.large"
+            ]
+          }
+        },
+        "azure": {
+          "all": {
+            "instanceType": "Standard_F2s_v2",
+            "validInstanceTypes": [
+              "Standard_F2s_v2"
+            ]
+          }
+        },
+        "gcp": {
+          "all": {
+            "instanceType": "e2-medium",
+            "validInstanceTypes": [
+              "e2-medium"
+            ]
+          }
+        },
+        "openstack": {
+          "all": {
+            "instanceType": "m1.medium",
+            "validInstanceTypes": [
+              "m1.medium"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

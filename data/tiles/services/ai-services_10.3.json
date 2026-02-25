@@ -1,0 +1,61 @@
+{
+  "name": "AI Services",
+  "version": "10.3.x",
+  "supportedIaaS": ["vsphere", "aws", "azure", "gcp"],
+  "supportedRuntimeKeys": ["ert_6.0", "ert_10.2", "ert_10.3", "ert_10.3_small_footprint"],
+  "sizes": [{ "size": "all", "displayName": "All" }],
+  "jobs": [
+    {
+      "vm": "controller",
+      "dynamicIPs": 1,
+      "staticIPs": 0,
+      "singleton": true,
+      "defaults": { "all": { "instances": 1, "persistentDisk": 1 } },
+      "iaas": {
+        "vsphere": { "all": { "instanceType": "xlarge.cpu", "validInstanceTypes": ["xlarge.cpu"] } },
+        "aws": { "all": { "instanceType": "m5.xlarge", "validInstanceTypes": ["m5.xlarge"] } },
+        "azure": { "all": { "instanceType": "Standard_D4s_v3", "validInstanceTypes": ["Standard_D4s_v3"] } },
+        "gcp": { "all": { "instanceType": "e2-standard-4", "validInstanceTypes": ["e2-standard-4"] } }
+      }
+    },
+    {
+      "vm": "t4",
+      "dynamicIPs": 0,
+      "staticIPs": 0,
+      "singleton": false,
+      "defaults": { "all": { "instances": 0, "persistentDisk": 0 } },
+      "iaas": {
+        "vsphere": { "all": { "instanceType": "t4", "validInstanceTypes": ["t4"] } },
+        "aws": { "all": { "instanceType": "g4dn.xlarge", "validInstanceTypes": ["g4dn.xlarge"] } },
+        "azure": { "all": { "instanceType": "Standard_NC4as_T4_v3", "validInstanceTypes": ["Standard_NC4as_T4_v3"] } },
+        "gcp": { "all": { "instanceType": "n1-standard-8", "validInstanceTypes": ["n1-standard-8"] } }
+      }
+    },
+    {
+      "vm": "cpu",
+      "dynamicIPs": 0,
+      "staticIPs": 0,
+      "singleton": false,
+      "defaults": { "all": { "instances": 0, "persistentDisk": 0 } },
+      "iaas": {
+        "vsphere": { "all": { "instanceType": "cpu", "validInstanceTypes": ["cpu"] } },
+        "aws": { "all": { "instanceType": "m7i.2xlarge", "validInstanceTypes": ["m7i.2xlarge"] } },
+        "azure": { "all": { "instanceType": "Standard_F8s_v2", "validInstanceTypes": ["Standard_F8s_v2"] } },
+        "gcp": { "all": { "instanceType": "c2-standard-8", "validInstanceTypes": ["c2-standard-8"] } }
+      }
+    },
+    {
+      "vm": "grid_t4-16q",
+      "dynamicIPs": 0,
+      "staticIPs": 0,
+      "singleton": false,
+      "defaults": { "all": { "instances": 0, "persistentDisk": 0 } },
+      "iaas": {
+        "vsphere": { "all": { "instanceType": "grid_t4-16q", "validInstanceTypes": ["grid_t4-16q"] } },
+        "aws": { "all": { "instanceType": "g4dn.xlarge", "validInstanceTypes": ["g4dn.xlarge"] } },
+        "azure": { "all": { "instanceType": "Standard_NC4as_T4_v3", "validInstanceTypes": ["Standard_NC4as_T4_v3"] } },
+        "gcp": { "all": { "instanceType": "n1-standard-8", "validInstanceTypes": ["n1-standard-8"] } }
+      }
+    }
+  ]
+}

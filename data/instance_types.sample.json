@@ -1,0 +1,18 @@
+{
+  "vsphere": [
+    {
+      "name": "nano",
+      "cpu": 1,
+      "ram": 0.5,
+      "ephemeralDisk": 8,
+      "cost": null
+    },
+    {
+      "name": "micro",
+      "cpu": 1,
+      "ram": 1,
+      "ephemeralDisk": 8,
+      "cost": null
+    }
+  ]
+}
