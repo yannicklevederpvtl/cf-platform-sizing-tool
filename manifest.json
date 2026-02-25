@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Platform Sizing Tool",
-  "version": "0.1",
+  "version": "0.1.2",
   "description": "Size Tanzu Platform and optional tiles across foundations (vSphere, Azure, AWS, GCP, OpenStack).",
   "icons": {
     "16": "icons/16.png",

@@ -1,1 +1,0 @@
-import{j as r,m as s,k as a,z as c,a2 as i,c as u,b as m,a3 as p,o as _}from"./U1ym-5yy.js";const f=r({__name:"index",setup(l){const o=s(),t=a();return c(()=>{const e=i(t);o.replace(e)}),(e,d)=>{const n=p("RouterView");return _(),u("div",null,[m(n)])}}});export{f as default};
