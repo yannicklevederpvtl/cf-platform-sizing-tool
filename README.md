@@ -18,7 +18,7 @@ Chrome extension for Cloud Foundry platform sizing.
 Everything runs locally in your browser. The only network egress is:
 
 - **Azure** – If you use Azure pricing, the extension can call Azure's retail prices API for the selected region.
-- **OpenAPI / LLM** – If you configure and use the chat or AI features, requests go to the configured API endpoint (e.g. OpenAI-compatible). When using the extension without a backend, you can use any HTTPS OpenAI-compatible endpoint; the extension will request access only to the host you configure (e.g. api.openai.com or your company API).
+- **OpenAPI / LLM** – If you configure and use the chat or AI features, requests go to the configured API endpoint (e.g. OpenAI-compatible). You can use any HTTPS OpenAI-compatible endpoint; the extension will request access only to the host you configure (e.g. api.openai.com or your private API).
 
 If you don't use those features or don't configure an API base or LLM provider, no external endpoints are called.
 
