@@ -26,7 +26,7 @@ If you don't use those features or don't configure an API base or LLM provider, 
 
 Pricing and instance-type data are seeded only for certain regions:
 
-- **Azure:** East US (`eastus`) is seeded; other regions can be synced within the tool (via Settings → Pricing and the Azure pricing API).
+- **Azure:** Four regions are seeded **eastus**, **eastus2**, **canadacentral**, **canadaeast**; other regions can be synced within the tool (via Settings → Pricing and the Azure pricing API).
 - **AWS:** Six regions are seeded: **us-east-1**, **us-east-2**, **us-west-1**, **us-west-2**, **ca-central-1**, **ca-west-1**.
 - **GCP** and other regions are planned for a future release.
 

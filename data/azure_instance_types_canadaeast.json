@@ -1,5 +1,5 @@
 {
-  "region": "eastus",
+  "region": "canadaeast",
   "instanceTypes": [
     {
       "name": "Standard_B1s",
@@ -7,8 +7,8 @@
       "ram": 1,
       "ephemeralDisk": 8,
       "cost": {
-        "On-Demand": 0.0104,
-        "1-Year Term": 0.0061,
+        "On-Demand": 0.0156,
+        "1-Year Term": 0.0068,
         "3-Year Term": null
       }
     },
@@ -18,8 +18,8 @@
       "ram": 4,
       "ephemeralDisk": 50,
       "cost": {
-        "On-Demand": 0.0496,
-        "1-Year Term": 0.0243,
+        "On-Demand": 0.0464,
+        "1-Year Term": 0.0273,
         "3-Year Term": null
       }
     },
@@ -29,7 +29,7 @@
       "ram": 8,
       "ephemeralDisk": 100,
       "cost": {
-        "On-Demand": 0.0177,
+        "On-Demand": 0.0375,
         "1-Year Term": null,
         "3-Year Term": null
       }
@@ -40,7 +40,7 @@
       "ram": 14,
       "ephemeralDisk": 200,
       "cost": {
-        "On-Demand": 0.0695,
+        "On-Demand": 0.075,
         "1-Year Term": null,
         "3-Year Term": null
       }
@@ -51,7 +51,7 @@
       "ram": 32,
       "ephemeralDisk": 400,
       "cost": {
-        "On-Demand": 0.071,
+        "On-Demand": 0.1501,
         "1-Year Term": null,
         "3-Year Term": null
       }
@@ -62,7 +62,7 @@
       "ram": 64,
       "ephemeralDisk": 800,
       "cost": {
-        "On-Demand": 0.2779,
+        "On-Demand": 0.1641,
         "1-Year Term": null,
         "3-Year Term": null
       }
@@ -73,7 +73,7 @@
       "ram": 128,
       "ephemeralDisk": 1600,
       "cost": {
-        "On-Demand": 0.5559,
+        "On-Demand": 0.3282,
         "1-Year Term": null,
         "3-Year Term": null
       }
@@ -84,7 +84,7 @@
       "ram": 192,
       "ephemeralDisk": 3200,
       "cost": {
-        "On-Demand": 0.4258,
+        "On-Demand": 0.9003,
         "1-Year Term": null,
         "3-Year Term": null
       }
@@ -95,7 +95,7 @@
       "ram": 256,
       "ephemeralDisk": 6400,
       "cost": {
-        "On-Demand": 0.5677,
+        "On-Demand": 1.2005,
         "1-Year Term": null,
         "3-Year Term": null
       }
@@ -106,7 +106,7 @@
       "ram": 14,
       "ephemeralDisk": 100,
       "cost": {
-        "On-Demand": 0.0403,
+        "On-Demand": 0.044,
         "1-Year Term": null,
         "3-Year Term": null
       }
@@ -117,7 +117,7 @@
       "ram": 32,
       "ephemeralDisk": 200,
       "cost": {
-        "On-Demand": 0.0466,
+        "On-Demand": 0.054,
         "1-Year Term": null,
         "3-Year Term": null
       }
@@ -128,7 +128,7 @@
       "ram": 64,
       "ephemeralDisk": 400,
       "cost": {
-        "On-Demand": 0.1611,
+        "On-Demand": 0.1759,
         "1-Year Term": null,
         "3-Year Term": null
       }
@@ -139,7 +139,7 @@
       "ram": 128,
       "ephemeralDisk": 800,
       "cost": {
-        "On-Demand": 0.3223,
+        "On-Demand": 0.2168,
         "1-Year Term": null,
         "3-Year Term": null
       }
@@ -150,7 +150,7 @@
       "ram": 160,
       "ephemeralDisk": 1200,
       "cost": {
-        "On-Demand": 0.4029,
+        "On-Demand": 0.4398,
         "1-Year Term": null,
         "3-Year Term": null
       }
@@ -161,7 +161,7 @@
       "ram": 256,
       "ephemeralDisk": 1600,
       "cost": {
-        "On-Demand": 0.3726,
+        "On-Demand": 0.4317,
         "1-Year Term": null,
         "3-Year Term": null
       }
@@ -172,7 +172,7 @@
       "ram": 32,
       "ephemeralDisk": 200,
       "cost": {
-        "On-Demand": 0.0466,
+        "On-Demand": 0.054,
         "1-Year Term": null,
         "3-Year Term": null
       }
@@ -183,7 +183,7 @@
       "ram": 384,
       "ephemeralDisk": 2400,
       "cost": {
-        "On-Demand": 0.5588,
+        "On-Demand": 1.0201,
         "1-Year Term": null,
         "3-Year Term": null
       }
@@ -194,7 +194,7 @@
       "ram": 432,
       "ephemeralDisk": 3200,
       "cost": {
-        "On-Demand": 1.2147,
+        "On-Demand": 1.2784,
         "1-Year Term": null,
         "3-Year Term": null
       }
@@ -205,8 +205,8 @@
       "ram": 2,
       "ephemeralDisk": 16,
       "cost": {
-        "On-Demand": 0.0246,
-        "1-Year Term": 0.0122,
+        "On-Demand": 0.0272,
+        "1-Year Term": 0.0136,
         "3-Year Term": null
       }
     },
@@ -216,8 +216,8 @@
       "ram": 4,
       "ephemeralDisk": 32,
       "cost": {
-        "On-Demand": 0.0846,
-        "1-Year Term": 0.05,
+        "On-Demand": 0.017,
+        "1-Year Term": 0.0547,
         "3-Year Term": null
       }
     },
@@ -227,8 +227,8 @@
       "ram": 8,
       "ephemeralDisk": 64,
       "cost": {
-        "On-Demand": 0.0338,
-        "1-Year Term": 0.1,
+        "On-Demand": 0.369,
+        "1-Year Term": 0.1094,
         "3-Year Term": null
       }
     },
@@ -238,8 +238,8 @@
       "ram": 16,
       "ephemeralDisk": 128,
       "cost": {
-        "On-Demand": 0.0677,
-        "1-Year Term": 0.1999,
+        "On-Demand": 0.068,
+        "1-Year Term": 0.2187,
         "3-Year Term": null
       }
     },
@@ -249,8 +249,8 @@
       "ram": 32,
       "ephemeralDisk": 256,
       "cost": {
-        "On-Demand": 0.135,
-        "1-Year Term": 0.3999,
+        "On-Demand": 0.136,
+        "1-Year Term": 0.4374,
         "3-Year Term": null
       }
     },
@@ -260,8 +260,8 @@
       "ram": 64,
       "ephemeralDisk": 512,
       "cost": {
-        "On-Demand": 2.83,
-        "1-Year Term": 0.7998,
+        "On-Demand": 1.132,
+        "1-Year Term": 0.8749,
         "3-Year Term": null
       }
     },
@@ -271,8 +271,8 @@
       "ram": 96,
       "ephemeralDisk": 768,
       "cost": {
-        "On-Demand": 0.406,
-        "1-Year Term": 1.1995,
+        "On-Demand": 4.431,
+        "1-Year Term": 1.3124,
         "3-Year Term": null
       }
     },
@@ -282,8 +282,8 @@
       "ram": 128,
       "ephemeralDisk": 1024,
       "cost": {
-        "On-Demand": 2.706,
-        "1-Year Term": 1.0995,
+        "On-Demand": 5.909,
+        "1-Year Term": 1.7498,
         "3-Year Term": null
       }
     },
@@ -293,7 +293,7 @@
       "ram": 3.5,
       "ephemeralDisk": 50,
       "cost": {
-        "On-Demand": 0.0135,
+        "On-Demand": 0.0129,
         "1-Year Term": null,
         "3-Year Term": null
       }
@@ -304,7 +304,7 @@
       "ram": 7,
       "ephemeralDisk": 100,
       "cost": {
-        "On-Demand": 0.027,
+        "On-Demand": 0.0259,
         "1-Year Term": null,
         "3-Year Term": null
       }
@@ -315,7 +315,7 @@
       "ram": 14,
       "ephemeralDisk": 200,
       "cost": {
-        "On-Demand": 0.0541,
+        "On-Demand": 0.0517,
         "1-Year Term": null,
         "3-Year Term": null
       }
@@ -326,7 +326,7 @@
       "ram": 28,
       "ephemeralDisk": 400,
       "cost": {
-        "On-Demand": 0.1759,
+        "On-Demand": 0.1903,
         "1-Year Term": null,
         "3-Year Term": null
       }
@@ -337,7 +337,7 @@
       "ram": 56,
       "ephemeralDisk": 800,
       "cost": {
-        "On-Demand": 0.2162,
+        "On-Demand": 0.3805,
         "1-Year Term": null,
         "3-Year Term": null
       }
@@ -348,7 +348,7 @@
       "ram": 14,
       "ephemeralDisk": 100,
       "cost": {
-        "On-Demand": 0.0342,
+        "On-Demand": 0.0493,
         "1-Year Term": null,
         "3-Year Term": null
       }
@@ -359,7 +359,7 @@
       "ram": 28,
       "ephemeralDisk": 200,
       "cost": {
-        "On-Demand": 0.088,
+        "On-Demand": 0.067,
         "1-Year Term": null,
         "3-Year Term": null
       }
@@ -370,7 +370,7 @@
       "ram": 56,
       "ephemeralDisk": 400,
       "cost": {
-        "On-Demand": 0.1369,
+        "On-Demand": 0.1363,
         "1-Year Term": null,
         "3-Year Term": null
       }
@@ -381,7 +381,7 @@
       "ram": 112,
       "ephemeralDisk": 800,
       "cost": {
-        "On-Demand": 0.3519,
+        "On-Demand": 0.3951,
         "1-Year Term": null,
         "3-Year Term": null
       }
@@ -392,7 +392,7 @@
       "ram": 2,
       "ephemeralDisk": 16,
       "cost": {
-        "On-Demand": 0.0177,
+        "On-Demand": 0.0187,
         "1-Year Term": null,
         "3-Year Term": null
       }
@@ -403,7 +403,7 @@
       "ram": 4,
       "ephemeralDisk": 32,
       "cost": {
-        "On-Demand": 0.0183,
+        "On-Demand": 0.0201,
         "1-Year Term": null,
         "3-Year Term": null
       }
@@ -414,7 +414,7 @@
       "ram": 8,
       "ephemeralDisk": 64,
       "cost": {
-        "On-Demand": 0.0368,
+        "On-Demand": 0.0403,
         "1-Year Term": null,
         "3-Year Term": null
       }
@@ -425,7 +425,7 @@
       "ram": 16,
       "ephemeralDisk": 128,
       "cost": {
-        "On-Demand": 0.1416,
+        "On-Demand": 0.1486,
         "1-Year Term": null,
         "3-Year Term": null
       }
@@ -436,9 +436,9 @@
       "ram": 28,
       "ephemeralDisk": 200,
       "cost": {
-        "On-Demand": 0.526,
-        "1-Year Term": 0.3092,
-        "3-Year Term": 0.1978
+        "On-Demand": null,
+        "1-Year Term": null,
+        "3-Year Term": null
       }
     }
   ]
